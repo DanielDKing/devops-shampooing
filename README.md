@@ -11,8 +11,6 @@ Shampooing
 - [Vmware](#vmware)
 - [Ansible](#ansible)
 - [Terraform](#terraform)
-- [List](#list)
-	- [List CheckBox](#list-checkbox)
 
 
 ----------------------------------
@@ -24,13 +22,14 @@ Understand/Answer the following:
 * What is default-gateway?
 * DNS
 * hosts file
-* 
 
 # Linux 
 Answer the following questions:
 * known_hosts file  (fingerprint)
 * authorized_keys file
 * /etc/suduoers vs /etc/sudoers.d/
+* /etc/shadow
+* /etc/passwd
 * Read about [Filesystem Hierarchy](https://linuxjourney.com/lesson/filesystem-hierarchy)
 * inode
 * what is the difference between symlink and hard link? 
@@ -128,16 +127,16 @@ Task 1:
 * Create pipeline for spring boot app (docker)
 * The pipeline will have the following stages:
   * tag
-  * build 
+  * build and push image
   * run the image locally
 
 Task 2:
 * create 2 pipelines:
   * package:
-    * tag - semVer tag, build only on dev branch and promote from dev to master
+    * tag - semVer tag, build only on master branch
     * test
     * build
-    * push to artifactory
+    * push pypi package to artifactory
   * app:
     * tag - semVer tag, build only on dev branch and promote from dev to master
     * build & test & push
@@ -153,8 +152,12 @@ Task 2:
 
 # Ansible 
 * Install ansible on your vm from Linux section
-* 
+* create playbook that does the following:
+  * Create vm from template
+  * install httpd
+  * open fw port 80
+  * start and enable nginx service
+  * allow ansible vm ssh to the new vm without password
 
-# Terraform 
-
+# Terraform - TODO
  

@@ -63,26 +63,30 @@ Tasks:
 * Verify that the disks would be mounted after reboot.
 * change selinux to permissive
 * Bash script. The script should "logrotate" the files. For example the following folder:
-  * before: 
-  * /legendary-folder
-    * good.log
-    * good.log1
-    * good.log2
-    * bad.log
-    * bad.log1
-    * bad.log2
-    * README
-  * after:
-  * /legendary-folder
-    * good.log
-    * good.log1
-    * good.log2
-    * good.log3
-    * bad.log
-    * bad.log1
-    * bad.log2
-    * bad.log3
-    * README
+* for all "log" files:
+  * if it end with number --> +1
+  * else --> add "1"
+* add new log file
+    * before: 
+    * /legendary-folder
+      * good.log
+      * good.log1
+      * good.log2
+      * bad.log
+      * bad.log1
+      * bad.log2
+      * README
+    * after:
+    * /legendary-folder
+      * good.log
+      * good.log1
+      * good.log2
+      * good.log3
+      * bad.log
+      * bad.log1
+      * bad.log2
+      * bad.log3
+      * README
 
 
 # Docker 

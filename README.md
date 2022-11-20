@@ -95,7 +95,11 @@ Tasks:
   * Control groups(cgroups)
   * Capabilities
 * What are the pros for using docker multi-stage build?
+* ENTRYPOINT vs RUN vs CMD
+* Why should we use containers (advantages)?
+* What is the difference between VM and container?
 * docker-compose
+* May containers run in a same namespace?
 
 Task
 * Install docker
@@ -115,13 +119,12 @@ Task:
 * Install k3s
 * deploy nginx deployment
 * create NodePort svc
-* 
 
 # Python 
 * Prime numbers
-  * Create a python package that gets number(>=2) and returns 
+  * Create a python package that gets number(>=2) and returns all the prime numbers that smaller than the input.
 * Goldbach conjecture
-  * Create fastAPI/Flask app that has 2 routes:
+  * Create fastAPI app that has 2 routes:
     * /hello-world            # Returns "Hello World!"
     * /goldbach/<:number>     # Returns 2 prime numbers that their sum equals to input number
     * 
@@ -160,8 +163,9 @@ Task 2:
   * Create vm from template
   * install httpd
   * open fw port 80
-  * start and enable nginx service
+  * start and enable httpd service
   * allow ansible vm ssh to the new vm without password
+  * create devops user
 
 # Terraform - TODO
  

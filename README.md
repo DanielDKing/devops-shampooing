@@ -33,6 +33,9 @@ Answer the following questions:
 * Read about [Filesystem Hierarchy](https://linuxjourney.com/lesson/filesystem-hierarchy)
 * inode
 * what is the difference between symlink and hard link? 
+* top/htop commands
+* ps command
+* Read about GRUB, systemd
 * lvm
 * mount command
 * /etc/fstab
@@ -62,6 +65,7 @@ Tasks:
 * Use 1 disk to create new lv and mount to /ela
 * Verify that the disks would be mounted after reboot.
 * change selinux to permissive
+* Reset root password
 * Bash script. The script should "logrotate" the files. For example the following folder:
 * for all "log" files:
   * if it end with number --> +1
